@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import store from './store'
 import ElementUI from 'element-ui';
+import 'normalize.css'
 import 'element-ui/lib/theme-chalk/index.css';
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css';
