@@ -3,9 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css';
 import './stytles/index.scss'
+Vue.use(ElementUI)
 router.beforeEach((to, from, next) => {
   NProgress.start();
   next();
@@ -20,6 +24,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

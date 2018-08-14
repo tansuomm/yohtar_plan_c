@@ -8,3 +8,11 @@ export function login(data) {
         data:data
     });
 }
+// 手机验证码
+export function code (data) {
+  return service({
+    url: '',
+    method: 'post',
+    data
+  })
+}

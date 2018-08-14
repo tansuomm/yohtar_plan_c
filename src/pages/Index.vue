@@ -25,10 +25,12 @@
 
 <script>
 import draggable from 'vuedraggable'
+import login from './../components/Login'
 export default {
   name: 'HelloWorld',
   components:{
-    draggable
+    draggable,
+    login
   },
   data () {
     return {
