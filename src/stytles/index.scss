@@ -18,8 +18,16 @@
 // iconfont
 @import './../assets/fonts/iconfont.css';
 // media
+.el-dialog{
+    margin-top: 40vh !important;
+}
 @media only screen and (max-width: 768px){
     .el-dialog{
-        width: 90%;
+        width: 80%;
+        margin-top: 30vh !important;
     }
+}
+
+.el-input__inner{
+    line-height: 1.15;
 }

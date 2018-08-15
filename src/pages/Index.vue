@@ -56,7 +56,7 @@
         @change="handleTip"
         v-model="type">
       </el-rate>
-      <el-input ref="title" :readonly="!type" style="margin-top:15px;" v-model="title" :placeholder="tip"></el-input>
+      <el-input ref="title" :disabled="!type" style="margin-top:15px;" v-model="title" :placeholder="tip"></el-input>
       <span slot="footer" class="dialog-footer">
           <el-button @click="dialogVisible = false">取 消</el-button>
           <el-button type="primary" @click="addPlan">确 定</el-button>
@@ -296,7 +296,7 @@
       width: 100%;
       .header{
         h1{
-          font-size: 1.6em;
+          font-size: 1.5em;
         }
       }
     }
