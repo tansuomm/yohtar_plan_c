@@ -153,7 +153,7 @@
         }else{
           this.tip = '大可爱的今日计划';
         }
-        this.$refs.title.focus();
+        // this.$refs.title.focus();
       }
     },
     filters:{
