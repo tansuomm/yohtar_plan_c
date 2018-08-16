@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="header">
-      <h1>Big lovable, this is your notebook.</h1>
+      <h1>Sweet Hart, this is your notebook.</h1>
     </div>
     <div class="container">
       <draggable v-model="dataTwo" :options="dragOptions" element="ul" :class="['block','illustration',dataTwo.length > 0  ? ''  : 't2',dialogVisible && type ==3 ? 'active' : '']">
@@ -79,7 +79,7 @@
       return {
         dialogVisible: false,
         type: null,
-        tip:'大可爱的今日计划',
+        tip:'大可爱的事',
         title: "",
         data: [],
         dataOne: getPlan("one"),
@@ -101,7 +101,7 @@
     watch: {
       type:function(val){
         if(!val){
-          this.tip = '大可爱的今日计划';
+          this.tip = '大可爱的事';
         }
       },
       dataOne: function () {
@@ -151,7 +151,7 @@
         }else if(val ==1){
           this.tip = '不重要+不紧急的事';
         }else{
-          this.tip = '大可爱的今日计划';
+          this.tip = '大可爱的事';
         }
         // this.$refs.title.focus();
       }
